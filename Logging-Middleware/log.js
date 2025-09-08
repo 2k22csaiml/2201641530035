@@ -11,7 +11,7 @@ export async function sendLog(stack, level, pkg, message, token) {
     });
 
     const data = await response.json();
-    console.log("Log Sent:", data);  // you can remove this console later
+    
     return data;
   } catch (err) {
     console.error("Logging Error:", err);
